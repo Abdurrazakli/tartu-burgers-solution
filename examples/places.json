@@ -1,0 +1,494 @@
+{
+  "results": [
+    {
+      "fsq_id": "49e9ef74f964a52011661fe3",
+      "categories": [
+        {
+          "id": 10027,
+          "name": "Museum",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 527,
+      "geocodes": {
+        "main": {
+          "latitude": 41.879454,
+          "longitude": -87.623691
+        }
+      },
+      "location": {
+        "address": "111 S Michigan Ave",
+        "address_extended": "# 6110",
+        "country": "US",
+        "cross_street": "btwn Monroe St & Jackson Dr",
+        "dma": "Chicago",
+        "locality": "Chicago",
+        "neighborhood": [
+          "Loop"
+        ],
+        "postcode": "60603",
+        "region": "IL"
+      },
+      "name": "The Art Institute of Chicago",
+      "related_places": {
+        "children": [
+          {
+            "fsq_id": "4bc9e614fb84c9b666d61b3e",
+            "name": "Thorne Miniature Rooms"
+          },
+          {
+            "fsq_id": "4d408eefaae1b1f7e6fd87f5",
+            "name": "Caffe Moderno"
+          }
+        ]
+      },
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "42b75880f964a52090251fe3",
+      "categories": [
+        {
+          "id": 10039,
+          "name": "Music Venue",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/musicvenue_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 836,
+      "geocodes": {
+        "main": {
+          "latitude": 41.882885,
+          "longitude": -87.621997
+        }
+      },
+      "location": {
+        "address": "201 E Randolph St",
+        "country": "US",
+        "cross_street": "btwn Columbus Dr & Michigan Ave",
+        "dma": "Chicago",
+        "locality": "Chicago",
+        "neighborhood": [
+          "Cityfront Center"
+        ],
+        "postcode": "60601",
+        "region": "IL"
+      },
+      "name": "Millennium Park",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4c47533649fa9521cb1f5e62",
+          "name": "Grant Park"
+        },
+        "children": [
+          {
+            "fsq_id": "4bd1c99a77b29c74a4378d82",
+            "name": "Wrigley Square"
+          },
+          {
+            "fsq_id": "4f4b989cd5fb493bfa5e9f42",
+            "name": "McDonald's Cycle Center"
+          },
+          {
+            "fsq_id": "4bd1c0c841b9ef3b0f79fce5",
+            "name": "Lurie Garden"
+          }
+        ]
+      },
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "4c47533649fa9521cb1f5e62",
+      "categories": [
+        {
+          "id": 16037,
+          "name": "Playground",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/playground_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 16039,
+          "name": "Urban Park",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 887,
+      "geocodes": {
+        "main": {
+          "latitude": 41.8766257847394,
+          "longitude": -87.61926269478862
+        }
+      },
+      "location": {
+        "address": "337 E Randolph Dr",
+        "country": "US",
+        "cross_street": "at Michigan Ave",
+        "dma": "Chicago",
+        "locality": "Chicago",
+        "neighborhood": [
+          "Loop"
+        ],
+        "postcode": "60601",
+        "region": "IL"
+      },
+      "name": "Grant Park",
+      "related_places": {
+        "children": [
+          {
+            "fsq_id": "51ed811f498e0dd73fcdf90c",
+            "name": "Sir Georg Solti Garden"
+          },
+          {
+            "fsq_id": "4bc7af152f94d13adf76127f",
+            "name": "The Agora"
+          }
+        ]
+      },
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "4a5bc165f964a520b9bb1fe3",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 786,
+      "geocodes": {
+        "main": {
+          "latitude": 41.88451693392431,
+          "longitude": -87.62578251254217
+        }
+      },
+      "location": {
+        "address": "53 E Randolph St",
+        "country": "US",
+        "cross_street": "btwn Wabash Ave & Garland Ct",
+        "dma": "Chicago",
+        "locality": "Chicago",
+        "neighborhood": [
+          "Fort Dearborn Addition"
+        ],
+        "postcode": "60601",
+        "region": "IL"
+      },
+      "name": "Intelligentsia Coffee",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "50b69e52e4b023feffc3b3ae",
+      "categories": [
+        {
+          "id": 16037,
+          "name": "Playground",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/playground_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1051,
+      "geocodes": {
+        "main": {
+          "latitude": 41.882904611592366,
+          "longitude": -87.61884577368617
+        }
+      },
+      "location": {
+        "address": "337 E Randolph Dr",
+        "country": "US",
+        "cross_street": "btwn Lake Shore Dr & Columbus Dr",
+        "dma": "Chicago",
+        "locality": "Chicago",
+        "neighborhood": [
+          "Cityfront Center"
+        ],
+        "postcode": "60601",
+        "region": "IL"
+      },
+      "name": "Maggie Daley Park",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4c47533649fa9521cb1f5e62",
+          "name": "Grant Park"
+        },
+        "children": [
+          {
+            "fsq_id": "5962e0dbe1f0aa6266c5e0f0",
+            "name": "Play Garden"
+          },
+          {
+            "fsq_id": "54908af7498eb446a5054ab0",
+            "name": "Maggie Daley Ice Skating Ribbon"
+          }
+        ]
+      },
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "4aba79eef964a5207b8120e3",
+      "categories": [
+        {
+          "id": 16026,
+          "name": "Monument",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/government_monument_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 932,
+      "geocodes": {
+        "main": {
+          "latitude": 41.87581770977464,
+          "longitude": -87.61894882598511
+        }
+      },
+      "location": {
+        "address": "301 S Columbus Dr",
+        "country": "US",
+        "cross_street": "btwn Jackson Dr & Balbo Dr",
+        "dma": "Chicago",
+        "locality": "Chicago",
+        "neighborhood": [
+          "Loop"
+        ],
+        "postcode": "60601",
+        "region": "IL"
+      },
+      "name": "Clarence Buckingham Memorial Fountain",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4c47533649fa9521cb1f5e62",
+          "name": "Grant Park"
+        },
+        "children": []
+      },
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "568ebfba498ebeae8ca36d1d",
+      "categories": [
+        {
+          "id": 19014,
+          "name": "Hotel",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/hotel_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [
+        {
+          "id": "ca6f7972-6e97-4391-ba98-68691a0d7acb",
+          "name": "Curio Collection"
+        }
+      ],
+      "distance": 1140,
+      "geocodes": {
+        "main": {
+          "latitude": 41.8878318,
+          "longitude": -87.6254261
+        }
+      },
+      "location": {
+        "address": "85 E Wacker Dr",
+        "country": "US",
+        "cross_street": "At N Michigan Ave",
+        "dma": "Chicago",
+        "locality": "Chicago",
+        "neighborhood": [
+          "Cityfront Center"
+        ],
+        "postcode": "60601",
+        "region": "IL"
+      },
+      "name": "LondonHouse Chicago, Curio Collection by Hilton",
+      "related_places": {
+        "children": [
+          {
+            "fsq_id": "59b2ae519be5223cd08a8955",
+            "name": "Land & Lake Kitchen"
+          },
+          {
+            "fsq_id": "59e390b68b98fd42a039c462",
+            "name": "On 21"
+          }
+        ]
+      },
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "4e879cdc93adfd051d6d609e",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13068,
+          "name": "American Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 896,
+      "geocodes": {
+        "main": {
+          "latitude": 41.884412453490874,
+          "longitude": -87.62304697069013
+        }
+      },
+      "location": {
+        "address": "130 E Randolph St",
+        "address_extended": "Ste CL3",
+        "country": "US",
+        "cross_street": "",
+        "dma": "Chicago",
+        "locality": "Chicago",
+        "neighborhood": [
+          "Cityfront Place"
+        ],
+        "postcode": "60601",
+        "region": "IL"
+      },
+      "name": "Wildberry Pancakes & Cafe",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "59e92b8d0e5da85456f55fa7",
+      "categories": [
+        {
+          "id": 17025,
+          "name": "Electronics Store",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/technology_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 17084,
+          "name": "Home Appliance Store",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/furniture_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1341,
+      "geocodes": {
+        "main": {
+          "latitude": 41.88926849644056,
+          "longitude": -87.62363247128044
+        }
+      },
+      "location": {
+        "address": "401 N Michigan Ave",
+        "country": "US",
+        "cross_street": "at the Chicago Riverwalk",
+        "dma": "Chicago",
+        "locality": "Chicago",
+        "neighborhood": [
+          "Cityfront Center"
+        ],
+        "postcode": "60611",
+        "region": "IL"
+      },
+      "name": "Apple Michigan Avenue",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "4bc23b61b492d13a1539a760",
+      "categories": [
+        {
+          "id": 10027,
+          "name": "Museum",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1805,
+      "geocodes": {
+        "main": {
+          "latitude": 41.86663663899534,
+          "longitude": -87.61433601379395
+        }
+      },
+      "location": {
+        "address": "Burnham Park",
+        "country": "US",
+        "cross_street": "btwn Roosevelt Rd & 18th Dr",
+        "dma": "Chicago",
+        "locality": "Chicago",
+        "neighborhood": [
+          "Harbor Square"
+        ],
+        "postcode": "60605",
+        "region": "IL"
+      },
+      "name": "Museum Campus",
+      "related_places": {
+        "children": [
+          {
+            "fsq_id": "5934af2fa4b51b0812268bf1",
+            "name": "The \"Other\" Tunnel"
+          }
+        ]
+      },
+      "timezone": "America/Chicago"
+    }
+  ],
+  "context": {
+    "geo_bounds": {
+      "circle": {
+        "center": {
+          "latitude": 41.8781,
+          "longitude": -87.6298
+        },
+        "radius": 10000
+      }
+    }
+  }
+}

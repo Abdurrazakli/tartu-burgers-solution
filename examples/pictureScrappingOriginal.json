@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "61a00f4b8ffad50da6897abe"
+  },
+  "notifications": [
+    {
+      "type": "notificationTray",
+      "item": {
+        "unreadCount": 0
+      }
+    }
+  ],
+  "response": {
+    "photos": {
+      "count": 1,
+      "groups": [
+        {
+          "type": "venue",
+          "name": "Venue photos",
+          "count": 1,
+          "items": [
+            {
+              "id": "51c5eabf498e538e65026cfb",
+              "createdAt": 1371925183,
+              "source": {
+                "name": "Instagram",
+                "url": "http://instagram.com"
+              },
+              "prefix": "https://fastly.4sqi.net/img/general/",
+              "suffix": "/149161_eHMuPXA7vRlIvNmhgR1I7LsphuIHm7eFZJ1ML6R9SXk.jpg",
+              "width": 612,
+              "height": 612,
+              "user": {
+                "id": "149161",
+                "firstName": "Radim",
+                "lastName": "SVOBODA",
+                "gender": "male",
+                "countryCode": "US",
+                "canonicalUrl": "https://foursquare.com/user/149161",
+                "canonicalPath": "/radimsvoboda",
+                "photo": {
+                  "prefix": "https://fastly.4sqi.net/img/user/",
+                  "suffix": "/149161-XSG2552WKRTYFZ5D.jpg"
+                },
+                "isAnonymous": false
+              },
+              "checkin": {
+                "id": "51c5eabd498ec876fed5678a",
+                "createdAt": 1371925181,
+                "type": "checkin",
+                "canonicalUrl": "https://foursquare.com/radimsvoboda/checkin/51c5eabd498ec876fed5678a",
+                "canonicalPath": "/radimsvoboda/checkin/51c5eabd498ec876fed5678a",
+                "timeZoneOffset": -300
+              },
+              "visibility": "public"
+            }
+          ]
+        }
+      ],
+      "summary": "1 photo"
+    }
+  }
+}

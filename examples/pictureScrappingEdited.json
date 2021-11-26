@@ -1,0 +1,18 @@
+{
+  "response": {
+    "photos": {
+      "groups": [
+        {
+          "items": [
+            {
+              "id": "51c5eabf498e538e65026cfb",
+              "createdAt": 1371925183,
+              "prefix": "https://fastly.4sqi.net/img/general/",
+              "suffix": "/149161_eHMuPXA7vRlIvNmhgR1I7LsphuIHm7eFZJ1ML6R9SXk.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

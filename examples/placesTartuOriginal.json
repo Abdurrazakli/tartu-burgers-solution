@@ -1,0 +1,949 @@
+{
+  "results": [
+    {
+      "fsq_id": "4d9ddfeb50aa41bd737c14e1",
+      "categories": [
+        {
+          "id": 13145,
+          "name": "Fast Food Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/fastfood_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 606,
+      "geocodes": {
+        "main": {
+          "latitude": 58.373424080861724,
+          "longitude": 26.75034183200793
+        }
+      },
+      "location": {
+        "address": "Kalda tee 1c/1d",
+        "country": "EE",
+        "locality": "Tartu",
+        "postcode": "50703",
+        "region": "Tartu"
+      },
+      "name": "Hesburger - Eedeni keskus",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4b71b8cdf964a52075582de3",
+      "categories": [
+        {
+          "id": 13145,
+          "name": "Fast Food Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/fastfood_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1173,
+      "geocodes": {
+        "main": {
+          "latitude": 58.37663746974459,
+          "longitude": 26.732141660141064
+        }
+      },
+      "location": {
+        "address": "Turu 6A",
+        "country": "EE",
+        "locality": "Tartu",
+        "postcode": "51014",
+        "region": "Tartu"
+      },
+      "name": "McDonald's",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "5048f68be4b0491500fe499b",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1226,
+      "geocodes": {
+        "main": {
+          "latitude": 58.376307184256156,
+          "longitude": 26.730145083703835
+        }
+      },
+      "location": {
+        "country": "EE",
+        "cross_street": "",
+        "postcode": ""
+      },
+      "name": "Liivi Villa",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4c695ede8e7c0f479f62df0f",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1287,
+      "geocodes": {
+        "main": {
+          "latitude": 58.376354162503056,
+          "longitude": 26.728813141667445
+        }
+      },
+      "location": {
+        "address": "Aleksandri 3A",
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "",
+        "region": "Tartu"
+      },
+      "name": "Kähkukas",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "52a5e1a2498eef82f3c27a63",
+      "categories": [
+        {
+          "id": 13026,
+          "name": "BBQ Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bbqalt_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1375,
+      "geocodes": {
+        "main": {
+          "latitude": 58.378007010693686,
+          "longitude": 26.729854861675186
+        }
+      },
+      "location": {
+        "address": "Turu 2",
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "",
+        "region": "Tartu"
+      },
+      "name": "Tartu BabyBack Ribs & BBQ",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b6ece54f964a52061cb2ce3",
+          "name": "Tasku Keskus"
+        }
+      },
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "5aff05e888a48b00249194cf",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1382,
+      "geocodes": {
+        "main": {
+          "latitude": 58.370674,
+          "longitude": 26.721903
+        }
+      },
+      "location": {
+        "address": "Võru tänav",
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "50108",
+        "region": "Tartu"
+      },
+      "name": "Ossu Burger",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "5f86e41f0003d21d16dcdda9",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1476,
+      "geocodes": {
+        "main": {
+          "latitude": 58.37784,
+          "longitude": 26.726993
+        }
+      },
+      "location": {
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "51013",
+        "region": "Tartu"
+      },
+      "name": "Viru Burger",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b72bd95f964a5204c862de3",
+          "name": "Tartu Kaubamaja"
+        }
+      },
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "568ffe9c498ef04dea203f01",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1491,
+      "geocodes": {
+        "main": {
+          "latitude": 58.37779599200077,
+          "longitude": 26.726559117697818
+        }
+      },
+      "location": {
+        "address": "Riia 1",
+        "country": "EE",
+        "cross_street": "Küüni",
+        "locality": "Tartu",
+        "postcode": "51004",
+        "region": "Tartu"
+      },
+      "name": "Gustav Gastro Cafe",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b72bd95f964a5204c862de3",
+          "name": "Tartu Kaubamaja"
+        }
+      },
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "541ce992498e9ab3265ed894",
+      "categories": [
+        {
+          "id": 13145,
+          "name": "Fast Food Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/fastfood_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1553,
+      "geocodes": {
+        "main": {
+          "latitude": 58.35999224581803,
+          "longitude": 26.72437422027702
+        }
+      },
+      "location": {
+        "country": "EE",
+        "cross_street": "",
+        "postcode": ""
+      },
+      "name": "McDonald's",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "510c261de4b0a7d134acdd1a",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1568,
+      "geocodes": {
+        "main": {
+          "latitude": 58.38275705619358,
+          "longitude": 26.74649799484187
+        }
+      },
+      "location": {
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "",
+        "region": "Tartu"
+      },
+      "name": "Kôver kiosk",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4c222be413c00f47040587de",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1599,
+      "geocodes": {
+        "main": {
+          "latitude": 58.36146339179358,
+          "longitude": 26.72153019987985
+        }
+      },
+      "location": {
+        "address": "",
+        "country": "EE",
+        "cross_street": "",
+        "postcode": ""
+      },
+      "name": "12 Tooli",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4db6b8b843a1369cb5eb8360",
+      "categories": [
+        {
+          "id": 13145,
+          "name": "Fast Food Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/fastfood_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1620,
+      "geocodes": {
+        "main": {
+          "latitude": 58.37810781570245,
+          "longitude": 26.724145021373527
+        }
+      },
+      "location": {
+        "address": "Küüni 7",
+        "country": "EE",
+        "cross_street": "Ülikooli 3/5",
+        "locality": "Tartu",
+        "postcode": "51004",
+        "region": "Tartu"
+      },
+      "name": "Fasters Express / Pohl",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "563c879fcd102b8e3528f039",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1723,
+      "geocodes": {
+        "main": {
+          "latitude": 58.370468227848676,
+          "longitude": 26.715944022137926
+        }
+      },
+      "location": {
+        "address": "Kastani 42",
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "50410",
+        "region": "Tartu"
+      },
+      "name": "Aparaat",
+      "related_places": {
+        "parent": {
+          "fsq_id": "535d4bee498ea4b8bc61763b",
+          "name": "Aparaaditehas"
+        }
+      },
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "5f29301185e6a875af05186e",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1738,
+      "geocodes": {
+        "main": {
+          "latitude": 58.370557,
+          "longitude": 26.715698
+        }
+      },
+      "location": {
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "50410",
+        "region": "Tartu"
+      },
+      "name": "VLND Burger",
+      "related_places": {
+        "parent": {
+          "fsq_id": "535d4bee498ea4b8bc61763b",
+          "name": "Aparaaditehas"
+        }
+      },
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4e0dfe7762843e04afa6c2f5",
+      "categories": [
+        {
+          "id": 13145,
+          "name": "Fast Food Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/fastfood_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1778,
+      "geocodes": {
+        "main": {
+          "latitude": 58.380645154095056,
+          "longitude": 26.725087512990033
+        }
+      },
+      "location": {
+        "address": "Vabaduse pst 3",
+        "country": "EE",
+        "locality": "Tartu",
+        "postcode": "51004",
+        "region": "Tartu"
+      },
+      "name": "Hesburger",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "60f2c407111649605ed4ecea",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1791,
+      "geocodes": {
+        "main": {
+          "latitude": 58.373024,
+          "longitude": 26.774904
+        }
+      },
+      "location": {
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "50708",
+        "region": "Tartu"
+      },
+      "name": "Burger Bros",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4b4b1397f964a520e79126e3",
+      "categories": [
+        {
+          "id": 13003,
+          "name": "Bar",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/pub_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1813,
+      "geocodes": {
+        "main": {
+          "latitude": 58.379556053221066,
+          "longitude": 26.722140312194824
+        }
+      },
+      "location": {
+        "address": "Ülikooli 5",
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "51003",
+        "region": "Tartu"
+      },
+      "name": "Illegaard",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4eea6e4902d5d0dbe5aef778",
+      "categories": [
+        {
+          "id": 13383,
+          "name": "Steakhouse",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/steakhouse_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1936,
+      "geocodes": {
+        "main": {
+          "latitude": 58.3809,
+          "longitude": 26.721666
+        }
+      },
+      "location": {
+        "address": "Küütri 3",
+        "country": "EE",
+        "locality": "Tartu",
+        "postcode": "51007",
+        "region": "Tartu"
+      },
+      "name": "Meat Market Steak & Cocktail",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "54f1c0db498e08a96c45e461",
+      "categories": [
+        {
+          "id": 13068,
+          "name": "American Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1980,
+      "geocodes": {
+        "main": {
+          "latitude": 58.38172236903032,
+          "longitude": 26.72220623400163
+        }
+      },
+      "location": {
+        "address": "Gildi 7",
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "",
+        "region": "Tartu"
+      },
+      "name": "Sheriff Saloon",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4c82500edc018cfa81a8cd6c",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 2088,
+      "geocodes": {
+        "main": {
+          "latitude": 58.37445672620737,
+          "longitude": 26.711223491484464
+        }
+      },
+      "location": {
+        "address": "",
+        "country": "EE",
+        "cross_street": "",
+        "postcode": ""
+      },
+      "name": "Starburger",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4be4c013910020a13239d214",
+      "categories": [
+        {
+          "id": 13018,
+          "name": "Pub",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/pub_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 2324,
+      "geocodes": {
+        "main": {
+          "latitude": 58.38233954118039,
+          "longitude": 26.715136100443885
+        }
+      },
+      "location": {
+        "address": "Jakobi 34",
+        "country": "EE",
+        "locality": "Tartu",
+        "postcode": "51005",
+        "region": "Tartu"
+      },
+      "name": "Krooks",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4fddc66ee4b044e822e72fe6",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 2424,
+      "geocodes": {
+        "main": {
+          "latitude": 58.366600623418385,
+          "longitude": 26.70389632235069
+        }
+      },
+      "location": {
+        "address": "1 L. Puusepa",
+        "country": "EE",
+        "cross_street": "Riia and L. Puusepa",
+        "locality": "Tartu",
+        "postcode": "",
+        "region": "Tartu"
+      },
+      "name": "Grillburger",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "51f0e9ba498e9e870d3c2609",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 2560,
+      "geocodes": {
+        "main": {
+          "latitude": 58.365264892578125,
+          "longitude": 26.701845169067383
+        }
+      },
+      "location": {
+        "country": "EE",
+        "cross_street": "",
+        "postcode": ""
+      },
+      "name": "Ümera Hamburger",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "503349b7e4b0a85e88fe4e8f",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 2783,
+      "geocodes": {
+        "main": {
+          "latitude": 58.38764190673828,
+          "longitude": 26.714160919189453
+        }
+      },
+      "location": {
+        "country": "EE",
+        "cross_street": "",
+        "postcode": ""
+      },
+      "name": "hamburger pizza",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4ec3f22ba17ce752d76ff212",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 3495,
+      "geocodes": {
+        "main": {
+          "latitude": 58.38545402237506,
+          "longitude": 26.69458313250357
+        }
+      },
+      "location": {
+        "address": "F.R.Kreutzwaldi 2",
+        "country": "EE",
+        "locality": "Tartu",
+        "region": "Tartu"
+      },
+      "name": "SIM*SIM",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4d22e8fbf7a9a143b56c439f",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 3623,
+      "geocodes": {
+        "main": {
+          "latitude": 58.39877128601074,
+          "longitude": 26.7214697599411
+        }
+      },
+      "location": {
+        "address": "Kruusamäe 41-51",
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu Parish",
+        "postcode": "50304",
+        "region": "Tartu"
+      },
+      "name": "Grillburger",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "4c5811007329c928c12e9080",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 4099,
+      "geocodes": {
+        "main": {
+          "latitude": 58.35851176571291,
+          "longitude": 26.677677612762167
+        }
+      },
+      "location": {
+        "address": "Ringtee",
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "50105",
+        "region": "Tartu"
+      },
+      "name": "Breadway",
+      "related_places": {},
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "5f8c2f2c96d7a7483e38f453",
+      "categories": [
+        {
+          "id": 13145,
+          "name": "Fast Food Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/fastfood_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 4139,
+      "geocodes": {
+        "main": {
+          "latitude": 58.358745,
+          "longitude": 26.676839
+        }
+      },
+      "location": {
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "50105",
+        "region": "Tartu"
+      },
+      "name": "Burger King",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b54771af964a5204cbc27e3",
+          "name": "Lõunakeskus"
+        }
+      },
+      "timezone": "Europe/Tallinn"
+    },
+    {
+      "fsq_id": "5fe883311bfd0663cf796749",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 4183,
+      "geocodes": {
+        "main": {
+          "latitude": 58.358717,
+          "longitude": 26.676086
+        }
+      },
+      "location": {
+        "country": "EE",
+        "cross_street": "",
+        "locality": "Tartu",
+        "postcode": "50105",
+        "region": "Tartu"
+      },
+      "name": "Food Coma",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b54771af964a5204cbc27e3",
+          "name": "Lõunakeskus"
+        }
+      },
+      "timezone": "Europe/Tallinn"
+    }
+  ],
+  "context": {
+    "geo_bounds": {
+      "circle": {
+        "center": {
+          "latitude": 58.36865227222387,
+          "longitude": 26.745307436255302
+        },
+        "radius": 6159
+      }
+    }
+  }
+}

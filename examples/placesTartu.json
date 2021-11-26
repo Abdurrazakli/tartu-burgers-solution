@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "fsq_id": "4d9ddfeb50aa41bd737c14e1",
+      "name": "Hesburger - Eedeni keskus",
+      "geocodes": {
+        "main": {
+          "latitude": 58.37784,
+          "longitude": 26.726993
+        }
+      },
+      "location": {
+        "address": "Kalda tee 1c/1d",
+        "cross_street": "btwn Monroe St & Jackson Dr"
+      }
+    }
+  ]
+}
