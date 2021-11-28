@@ -10,13 +10,7 @@ import com.qminder.burgers.qminder.dtos.fourSquare.places.ResultRespDto;
 import com.qminder.burgers.qminder.dtos.internal.BurgerPlaceDto;
 import com.qminder.burgers.qminder.exception.BurgerErrorException;
 import com.qminder.burgers.qminder.service.BurgerFinderService;
-import com.qminder.burgers.qminder.utils.HeaderGeneraterUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.jsoup.Connection;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
@@ -25,7 +19,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.util.UriComponentsBuilder;
 import reactor.core.publisher.Mono;
 
-import java.io.IOException;
 import java.net.URI;
 import java.util.*;
 import java.util.function.BiFunction;
@@ -50,11 +43,8 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
     private String BURGER_DETECTOR_END_POINT;
     @Value("${picture.oauth_token}")
     private String OAUTH_TOKEN_PICTURE;
-    @Value("${foursquare.cookie}")
-    private String BURGER_COOKIE_HEADERS;
-    @Value("${foursquare.sleep}")
-    private int SLEEP;
-    private Map<String, String> cookies;
+    @Value("${foursquare.number-of-pictures}")
+    private int NUMBER_OF_PICTURES_TO_SELECT;
 
     public BurgerFinderServiceImpl(WebClient webClient) {
         this.webClient = webClient;
@@ -76,7 +66,7 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
     private BurgerPlaceDto prepareBurgerPlace(PlaceRespDto placeApiResponse) {
         MainGeoCodeDto mainGeocode = placeApiResponse.getGeocodes().getMainGeocode();
 
-        Optional<Item> burgerItem = fetchPicture(placeApiResponse.getFsqID(), placeApiResponse.getName());
+        Optional<Item> burgerItem = fetchPicture(placeApiResponse.getFsqID());
         String pictureUrl = burgerItem.isPresent() ? burgerItem.get().getPictureUrl() : DEFAULT_PICTURE_URL;
         return BurgerPlaceDto.builder()
                 .name(placeApiResponse.getName())
@@ -87,27 +77,29 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
                 .build();
     }
 
-    private Optional<Item> fetchPicture(String fsqID, String name) {
-//        int totalNumberOfPicture = fetchPhotoSize(fsqID, name);
-        int totalNumberOfPicture = 1000;
-        log.info("For picture id: {}, we need to fetch {} of pictures", fsqID, totalNumberOfPicture);
+    private Optional<Item> fetchPicture(String fsqID) {
+        log.info("For picture id: {}, we need to fetch {} of pictures", fsqID, NUMBER_OF_PICTURES_TO_SELECT);
         int batchSize = 200; // site doesn't allow getting more
         int offset = 0;
         int limit = 0;
-        int numberOfBatches = calculateNumberOfBatches.apply(totalNumberOfPicture, batchSize);
+        int numberOfBatches = calculateNumberOfBatches.apply(NUMBER_OF_PICTURES_TO_SELECT, batchSize);
 
-        List<Item> allItems = new ArrayList<>(totalNumberOfPicture);
+        List<Item> allItems = new ArrayList<>(NUMBER_OF_PICTURES_TO_SELECT);
         for (int i = 0; i < numberOfBatches; i++) {
             log.info("Fetching pictures for fsqId:{}.Batch:{}/{}", fsqID, i, numberOfBatches);
             offset = limit;
             limit = limit + batchSize;
             List<Item> items = scrapPictures(offset, limit, fsqID);
+            if (items.isEmpty()) {
+                log.info("All possible pictures have been fetched for {}", fsqID);
+                break;
+            }
             allItems.addAll(items);
         }
         return findFirstBurger(allItems);
     }
 
-    public Optional<Item> findFirstBurger(List<Item> allItems) {
+    private Optional<Item> findFirstBurger(List<Item> allItems) {
         if (allItems.size() == 0) {
             return Optional.empty();
         }
@@ -161,47 +153,6 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
                 .queryParam("limit", limit)
                 .queryParam("oauth_token", OAUTH_TOKEN_PICTURE)
                 .build().toUri();
-    }
-
-    public int fetchPhotoSize(String fsqId, String name) {
-        //Generating part of path from name
-        String namePath = name.toLowerCase(Locale.ROOT).replaceAll(" ", "-")
-                .replaceAll("[^0-9a-zA-Z-]", "");
-        String baseUrl = "https://foursquare.com/v/%s/%s/photos";
-        String fullUrl = String.format(baseUrl, namePath, fsqId);
-        try {
-            String USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36";
-            //initially use default cookies to bypass automation scrapping check
-            if (Objects.isNull(cookies)) {
-                cookies = HeaderGeneraterUtil.generateHeaderMap(BURGER_COOKIE_HEADERS);
-            }
-            try {
-                log.info("Sleep started");
-                Thread.sleep(SLEEP);
-                log.info("Sleep ended");
-            } catch (InterruptedException e) {
-                log.error("Sleep problem.");
-            }
-            Connection.Response response = Jsoup.connect(fullUrl)
-                    .header("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9")
-                    .method(Connection.Method.GET)
-                    .cookies(cookies)
-                    .userAgent(USER_AGENT).execute();
-            // then everytime update cookie with new result
-            cookies = response.cookies();
-            Document doc = response.parse();
-            String fullSelectorToPhotoCount = "#container > div.venueDetail.hasPhoto > div.contents > div.venueInfoSection > div.sectionsBar > ul > li.photosBtn.sectionBtn.active > a > span.sectionCount";
-            Elements photoCount = doc.select(fullSelectorToPhotoCount);
-            if (photoCount.size() != 1) {
-                log.error("FsqId: {}, Photo count elements expected: 1, got: {}", fsqId, photoCount.size());
-                return 0; //No photo exists.
-            } else {
-                Element count = photoCount.get(0);
-                return Integer.parseInt(count.text().replace(",", ""));
-            }
-        } catch (IOException e) {
-            throw new BurgerErrorException("JSoup error:", e);
-        }
     }
 
     private List<PlaceRespDto> fetchBurgerPlaces() {
