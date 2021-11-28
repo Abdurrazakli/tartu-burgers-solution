@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css}">
+    <!-- jQuery library -->
+    <script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js}"></script>
+    <!-- Popper JS -->
+    <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js}"></script>
+    <!-- Latest compiled JavaScript -->
+    <script th:src="@{https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js}"></script>
+
+    <style>
+        .td-design {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" style="margin-top: 25px">
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Picture</th>
+                    </thead>
+                    <tbody>
+                        <tr th:each="data: ${dataList}" >
+                            <td style="vertical-align: middle"><span th:text="${data.getName()}"></span></td>
+                            <td style="vertical-align: middle"><span th:text="${data.getLocation()}"></span></td>
+                            <td style="vertical-align: middle"><span th:text="${data.getLatitude()}"></span></td>
+                            <td style="vertical-align: middle"><span th:text="${data.getLongitude()}"></span></td>
+                            <td style="vertical-align: middle"><img th:src="@{${data.getPictureUrl()}}" width="150" height="150"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

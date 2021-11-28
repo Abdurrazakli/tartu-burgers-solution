@@ -29,7 +29,7 @@ import java.util.stream.Collectors;
 public class BurgerFinderServiceImpl implements BurgerFinderService {
     private static final String BASE_API_URL = "https://api.foursquare.com/v3";
     private final WebClient webClient;
-    private BiFunction<Integer, Integer, Integer> calculateNumberOfBatches =
+    private final BiFunction<Integer, Integer, Integer> calculateNumberOfBatches =
             (totalNumberOfPicture, batchSize) ->
                     totalNumberOfPicture % batchSize > 0 ?
                             totalNumberOfPicture / batchSize + 1 :
@@ -57,6 +57,7 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
         List<PlaceRespDto> placeRespDtos = fetchBurgerPlaces();
         List<BurgerPlaceDto> places = placeRespDtos
                 .stream()
+                .parallel()
                 .map(this::prepareBurgerPlace)
                 .collect(Collectors.toList());
         log.info("Found all burger places,count:{}", places.size());
