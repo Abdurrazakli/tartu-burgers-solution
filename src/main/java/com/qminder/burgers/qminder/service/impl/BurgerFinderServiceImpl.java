@@ -52,7 +52,8 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
     private String OAUTH_TOKEN_PICTURE;
     @Value("${foursquare.cookie}")
     private String BURGER_COOKIE_HEADERS;
-
+    @Value("${foursquare.sleep}")
+    private int SLEEP;
     private Map<String, String> cookies;
 
     public BurgerFinderServiceImpl(WebClient webClient) {
@@ -87,7 +88,8 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
     }
 
     private Optional<Item> fetchPicture(String fsqID, String name) {
-        int totalNumberOfPicture = fetchPhotoSize(fsqID, name);
+//        int totalNumberOfPicture = fetchPhotoSize(fsqID, name);
+        int totalNumberOfPicture = 1000;
         log.info("For picture id: {}, we need to fetch {} of pictures", fsqID, totalNumberOfPicture);
         int batchSize = 200; // site doesn't allow getting more
         int offset = 0;
@@ -106,6 +108,9 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
     }
 
     public Optional<Item> findFirstBurger(List<Item> allItems) {
+        if (allItems.size() == 0) {
+            return Optional.empty();
+        }
         List<String> pictureLinks = allItems
                 .stream()
                 .parallel()
@@ -169,6 +174,13 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
             //initially use default cookies to bypass automation scrapping check
             if (Objects.isNull(cookies)) {
                 cookies = HeaderGeneraterUtil.generateHeaderMap(BURGER_COOKIE_HEADERS);
+            }
+            try {
+                log.info("Sleep started");
+                Thread.sleep(SLEEP);
+                log.info("Sleep ended");
+            } catch (InterruptedException e) {
+                log.error("Sleep problem.");
             }
             Connection.Response response = Jsoup.connect(fullUrl)
                     .header("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9")
