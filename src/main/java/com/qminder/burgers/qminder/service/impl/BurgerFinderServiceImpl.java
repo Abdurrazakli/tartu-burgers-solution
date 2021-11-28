@@ -108,6 +108,9 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
     }
 
     public Optional<Item> findFirstBurger(List<Item> allItems) {
+        if (allItems.size() == 0) {
+            return Optional.empty();
+        }
         List<String> pictureLinks = allItems
                 .stream()
                 .parallel()
