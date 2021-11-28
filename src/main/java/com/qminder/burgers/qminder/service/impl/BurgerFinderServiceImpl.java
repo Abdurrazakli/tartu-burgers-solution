@@ -88,7 +88,8 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
     }
 
     private Optional<Item> fetchPicture(String fsqID, String name) {
-        int totalNumberOfPicture = fetchPhotoSize(fsqID, name);
+//        int totalNumberOfPicture = fetchPhotoSize(fsqID, name);
+        int totalNumberOfPicture = 1000;
         log.info("For picture id: {}, we need to fetch {} of pictures", fsqID, totalNumberOfPicture);
         int batchSize = 200; // site doesn't allow getting more
         int offset = 0;
