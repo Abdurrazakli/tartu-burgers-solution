@@ -170,6 +170,13 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
             if (Objects.isNull(cookies)) {
                 cookies = HeaderGeneraterUtil.generateHeaderMap(BURGER_COOKIE_HEADERS);
             }
+            try {
+                log.info("Sleep started");
+                Thread.sleep(500);
+                log.info("Sleep ended");
+            } catch (InterruptedException e) {
+                log.error("Sleep problem.");
+            }
             Connection.Response response = Jsoup.connect(fullUrl)
                     .header("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9")
                     .method(Connection.Method.GET)
