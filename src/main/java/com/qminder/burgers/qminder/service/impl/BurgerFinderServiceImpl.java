@@ -52,7 +52,8 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
     private String OAUTH_TOKEN_PICTURE;
     @Value("${foursquare.cookie}")
     private String BURGER_COOKIE_HEADERS;
-
+    @Value("${foursquare.sleep}")
+    private int SLEEP;
     private Map<String, String> cookies;
 
     public BurgerFinderServiceImpl(WebClient webClient) {
@@ -172,7 +173,7 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
             }
             try {
                 log.info("Sleep started");
-                Thread.sleep(500);
+                Thread.sleep(SLEEP);
                 log.info("Sleep ended");
             } catch (InterruptedException e) {
                 log.error("Sleep problem.");
