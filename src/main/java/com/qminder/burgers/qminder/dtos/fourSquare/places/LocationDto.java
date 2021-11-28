@@ -1,11 +1,10 @@
 package com.qminder.burgers.qminder.dtos.fourSquare.places;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonSetter;
-import com.fasterxml.jackson.annotation.Nulls;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.StringJoiner;
 
 @Data
 public class LocationDto implements Serializable {
@@ -13,4 +12,10 @@ public class LocationDto implements Serializable {
     private String address = "";
     @JsonProperty("cross_street")
     private String crossStreet = "";
+
+    public String getFullAddress() {
+        StringJoiner stringJoiner = new StringJoiner(",");
+        stringJoiner.add(this.address).add(this.crossStreet);
+        return stringJoiner.toString();
+    }
 }

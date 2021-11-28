@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 @Configuration
 public class Beans {
-    public static final int TIMEOUT = 5000;
+    public static final int TIMEOUT = 50000;
 
     @Bean("webClient")
     public WebClient webClientWithTimeout() {

@@ -58,9 +58,10 @@ public class Item implements Serializable, Comparable<Item> {
         this.suffix = suffix;
     }
 
-    public String getPictureUrl(){
-        return String.format("%s600x600%s",prefix,suffix);
+    public String getPictureUrl() {
+        return String.format("%s600x600%s", prefix, suffix);
     }
+
     @Override
     public int compareTo(Item o) {
         return this.getCreatedAt().compareTo(o.getCreatedAt());
