@@ -18,6 +18,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -59,12 +60,16 @@ public class BurgerFinderServiceImpl implements BurgerFinderService {
     }
 
     @Override
+    @Cacheable(value = "getBurgerPlaces_cache")
     public List<BurgerPlaceDto> getBurgerPlaces() {
+        log.info("Finding burger places!");
         List<PlaceRespDto> placeRespDtos = fetchBurgerPlaces();
-        return placeRespDtos
+        List<BurgerPlaceDto> places = placeRespDtos
                 .stream()
                 .map(this::prepareBurgerPlace)
                 .collect(Collectors.toList());
+        log.info("Found all burger places,count:{}", places.size());
+        return places;
     }
 
     private BurgerPlaceDto prepareBurgerPlace(PlaceRespDto placeApiResponse) {
