@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* com.qminder.burgers.qminder.QminderApplication
+web: java -jar target/qminder-0.0.1-SNAPSHOT.jar
