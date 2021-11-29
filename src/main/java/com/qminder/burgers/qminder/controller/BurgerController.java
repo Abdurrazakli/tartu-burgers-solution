@@ -2,15 +2,17 @@ package com.qminder.burgers.qminder.controller;
 
 import com.qminder.burgers.qminder.dtos.internal.BurgerPlaceDto;
 import com.qminder.burgers.qminder.service.BurgerFinderService;
-import org.springframework.http.ResponseEntity;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController()
-@RequestMapping("/burger")
+@Controller
+@Slf4j
+@RequestMapping("/")
 public class BurgerController {
     private final BurgerFinderService burgerFinderService;
 
@@ -19,7 +21,11 @@ public class BurgerController {
     }
 
     @GetMapping
-    public ResponseEntity<List<BurgerPlaceDto>> getBurgers() {
-        return ResponseEntity.ok(burgerFinderService.getBurgerPlaces());
+    public String getIndexPage(Model model) {
+        log.info("Index page is loading");
+        List<BurgerPlaceDto> burgerPlaces = burgerFinderService.getBurgerPlaces();
+        model.addAttribute("dataList", burgerPlaces);
+        log.info("Index page loaded");
+        return "index";
     }
 }
