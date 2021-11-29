@@ -38,6 +38,12 @@ Response response = client.newCall(request).execute();
 
 
 # How to parse picture
-- increase offset 200 by 200
-`https://api.foursquare.com/v2/venues/49e9ef74f964a52011661fe3/photos?locale=en&explicit-lang=false&v=20211119&id=49e9ef74f964a52011661fe3&offset=600&limit=6000&wsid=TVITXVUC2EDV2W2SJ3SMDDY0ZZE067&oauth_token=TTRWRZN3UTS5M2HI10NNFFV4Q2BEM4QF3IPBIYBDEPRJIPY2`
-  
+1. https://foursquare.com/v/{FSQ_ID}/photos open this link.
+2. In browser, open `developer tools`, go to `network tab`
+3. Click on `See more photos` in web-site
+4. In `network` select `Fetch/XHR`
+5. Search for `photos?`
+6. That link is the source of the pictures.
+7. `oauth_token` should be set to `OAUTH_TOKEN_PICTURE` in application properties
+8. `offset` and `limit`. Increase offset and limit 200 by 200 to fetch pictures. It is max limit.
+`https://api.foursquare.com/v2/venues/4c222be413c00f47040587de/photos?locale=en&explicit-lang=false&v=20211119&id=49e9ef74f964a52011661fe3&offset=0&limit=60&wsid=MITWDHNTSPRFFKMGYOCGFDDU4GELG0&oauth_token=QEJ4AQPTMMNB413HGNZ5YDMJSHTOHZHMLZCAQCCLXIX41OMP`
